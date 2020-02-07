@@ -1,5 +1,6 @@
-# StockAlert by Justin Wang
-This is Justin Wang's Insight-BOSTON-20A Data Engineering Project
+# StockAlert
+Justin Wang's Insight-BOSTON-20A Data Engineering Project
+
 ## Table of Contents
 1. [Problem](README.md#problem)
 1. [Basic Strategy](README.md#basic-strategy)
