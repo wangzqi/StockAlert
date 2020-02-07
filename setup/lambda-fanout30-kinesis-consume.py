@@ -4,7 +4,6 @@ from datetime import datetime
 import time
 import base64, json, decimal
 
-
 def lambda_handler(event, context):
     dynamo_db = boto3.resource('dynamodb', region_name='us-east-1')
     table = dynamo_db.Table('DailyStockAverage')
