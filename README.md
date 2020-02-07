@@ -29,51 +29,6 @@ A once-every-three-years study by the Federal Reserve Board found that in 2016, 
 * The records streamed through Kinesis and triggered Lambda to process. 
 * The output are stored on Dynamodb. 
 
-## Running Instructions
-### EC2
-* Spin up an EC2 instance. 
-* Make sure that all the python and system requirements (in requirements.txt) are installed.
-* Clone this repo to the EC2 node. 
-* Go to StockAlert/src/ in your terminal.
-
-#### Front End
-* Type "chmod +x app.py".
-* Type "python app.py".
-* Go to the website that is specified. 
-* Hit Submit. 
-
-#### Input
-* Type "chmod +x app.py".
-* Type "python app.py".
-* Go to the website that is specified. 
-* Hit Submit.
-
-### Kinesis
-* Spin up an EC2 instance (or cluster). 
-* Make sure Spark is installed on all the instances.
-* Make sure that all the python and system requirements (in requirements.txt) are installed.
-* Clone this repo to the master EC2 node. 
-* Go to InvisibleMe/src/.
-* Edit user_input.py to the correct values. 
-* Enter Spark-Submit run.py.
-
-### Lambda
-* Spin up an EC2 instance (or cluster). 
-* Make sure Spark is installed on all the instances.
-* Make sure that all the python and system requirements (in requirements.txt) are installed.
-* Clone this repo to the master EC2 node. 
-* Go to InvisibleMe/src/.
-* Edit user_input.py to the correct values. 
-* Enter Spark-Submit run.py.
-
-### Dynamodb
-* Spin up an EC2 instance (or cluster). 
-* Make sure Spark is installed on all the instances.
-* Make sure that all the python and system requirements (in requirements.txt) are installed.
-* Clone this repo to the master EC2 node. 
-* Go to InvisibleMe/src/.
-* Edit user_input.py to the correct values. 
-* Enter Spark-Submit run.py.
 
 ## Demo
 
