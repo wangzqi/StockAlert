@@ -91,57 +91,6 @@ In the first part, you can see an example of data that is stored in an S3 Bucket
 * I am assuming that the information is relational and organized in a .csv type format, though the program does allow for flexibility as to what the delimiter is. 
 * The assumption is that the *master* EC2 node has sufficient space to hold the data. This can be modified by writing to a MySQL database first, though the time cost is signficantly larger. 
 
-
-## Files in Repo 
-
-### column_operations.py
-
-#### description: 
-This file has just one function, **cleaning_data**. This function takes in a row and based on whether it was specified that a particular column should be *encrypted* or *decrypted*, it performs this operation on that column but leaves the rest of the column untouched. This is returned in the format of Row(key1 = value1, key2 = value2, ...) where the keys are merely the column names (assumed to be 1, 2, 3, 4,... unless otherwise specified).    
-
-
-### creating_keys.py
-
-#### description: 
-This file contains three functions. **creating_a_key** simply takes a pre-specified list (called *qwerty_list* through this program) and returns a random sampling (with replacement) of 16 of these elements and returns a string of them. 
-The next function, **creating_dict_of_keys** simply employs **creating_a_key** 2n times (where n is the number of columns to be encrypted) and stores this information in a dictionary where the schema is column_id = (key, initial_vector). This allows for each column to have a unique key in order to increase the security of the information. 
-The final function, **making_key_dict** takes the specification of *encryption* or *decryption* and creates the appropriate key dictionary, either by pulling a previously saved dictionary (see the descryption in Basic Strategy) or by creating a new one by calling **creating_dict_of_keys**. 
-The bottom of this file then specifies two variables which will be used throughout, *key_dict* and *key_list*. Note that they key_list is just a list version of the key_dict. They are used for slightly different purposes through the function depending on which is faster/easier. 
-
-### decryption.py
-
-#### description: 
-The only function is **decryption**. This simply takes a base64 message that has been encrypted using a specified key and initial vector, returns the object to a byte string, and then decodes the string. 
-
-### encryption.py
-
-#### description: 
-The first function is **making_multiple_16**. This function exists because AES assumes the message length to be a multiple of 16. This function takes a string of any length and adds spaces at the end of it until the length of the string is a multiple of 16. Then it returns this string. 
-The second function is **encryption**. This simply takes a string message, a key, and initial vector, encodes the string using AES, and then encodes it using base64. Then it returns this string. 
-
-### user_input.py
-
-#### description:
-This file names universial variables that will be used through the program. It does this by referencing a file that has been created by the **front_end.py** in the current directory. One exception to this is the *keys_write_path*. This will always be my own personal S3 bucket for sake of security. 
-
-### run.py
-
-#### description:
-This is the main run function and also where the pySpark is used. Everything is initiallized and then eventually run within this function. It has an if statement to deal with the fact that if I am encrypting (rather than decrypting), we need to write the keys to my S3. There is also a timer to keep an eye on how long it took for the function to run. 
-
-### front_end.py
-
-#### description:
-This is where my Flask program is stored. It references various forms and .html files that are stored in their proper place. My hope is that their construction is self-evident, however, feel free to contact me with questions. 
-
-## Encryption
-For this project, I chose to employ the Rijndael Cypher, commonly known as AES (Advanced Encryption System). I chose this for three reasons, primarily: 
-* it scales linearly (i.e. log(n))
-* it provides a one-to-one mapping, given a key and name. That means that Samuel Judge and Herald Gerard will be encrypted uniquely, so they can still be seen as "person A" and "person B," for sake of research. 
-* it is a symmetric code. That is to say, there is one unique key (and initial vector) that one person holds. This seemed an easier proposition than trying to put a secure, asymmetric key system into place. 
-
-For more reading and detail on AES, please read this [article](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) or watch this [video](https://www.youtube.com/watch?v=liKXtikP9F0&t=644s). 
-
 ## Scalability
 
 
@@ -163,6 +112,4 @@ Coming up with a good solution to this problem that can both maximize time and m
 * There are several asthetic things I would like to fix. For example, due to the lack of ordering on dictionaries, my columns can shuffle, depending on how I choose to store them. Certainly this is fixible, but I did not find a more beautiful solution yet. Additionally, the decryption is not completely user-friendly. The decryption is done by creating a unique key that is tagged to the encrypted file and I can use to locate the approrpiate key(s) for that file. 
 
 ## Contact Information
-* [Samuel David Judge](https://www.linkedin.com/in/samueldjudge/)
-* Samuel.D.Judge@gmail.com
-* 269.921.0330
+* Wangzqi@gmail.com
