@@ -25,20 +25,17 @@ A once-every-three-years study by the Federal Reserve Board found that in 2016, 
 ![Pipeline](docs/Pipeline.png)
 
 * The input data is stored on Amazon S3.
-* One Amazon EC2 instances is deployed to read and put records to Kinesis.
-* The records streamed through Kinesis and triggered Lambda to process 
+* One Amazon EC2 instance is deployed to read and put records to Kinesis.
+* The records streamed through Kinesis and triggered Lambda to process. 
 * The output are stored on Dynamodb. 
 
-For a majority of the testing of my code, I used [FEC Donation Data](https://www.fec.gov/data/browse-data/?tab=bulk-data) and [White Pages](http://www.odditysoftware.com/download_databases/29_white-pages-data_1.html). 
-
 ## Running Instructions
-### Main Method
-* Spin up an EC2 instance (or cluster). 
-* Make sure Spark is installed on all the instances.
+### EC2
+* Spin up an EC2 instance. 
 * Make sure that all the python and system requirements (in requirements.txt) are installed.
-* Clone this repo to the master EC2 node. 
-* Go to InvisibleMe/tools/ in your terminal.
-* Type "chmod +x front_end.py".
+* Clone this repo to the EC2 node. 
+* Go to StockAlert/src/ in your terminal.
+* Type "chmod +x app.py".
 * Type "python front_end.py".
 * Go to the website that is specified. 
 * Enter the information as prompted. 
