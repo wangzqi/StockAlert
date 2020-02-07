@@ -22,7 +22,7 @@ A once-every-three-years study by the Federal Reserve Board found that in 2016, 
 
 ## Basic Strategy
 
-![Pipeline](docs/pipeline.png)
+![Pipeline](docs/Pipeline.png)
 
 The strategy was to allow the user to input **beginning file location**, **write location**, **columns** to be encrypted (or decrypted), whether you want it **encrypted** or **decrypted**, and the **delimiter** separating data on a Flask front end. This is then fed into a Spark program which pulls the correct file, distributes it across multiple nodes, encrypts the information on each node, then returns it back to the main node. From here, the *newly encrypted* file is written back into the EC2 container and the key for the encryption is stored in my personal EC2 bucket. An illustration of my chosen pipeline can be shown above. 
 
