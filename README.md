@@ -84,13 +84,6 @@ In the first part, you can see an example of data that is stored in an S3 Bucket
 [Here](https://youtu.be/rsZm3JbHMSM) you can watch a video of my presentation where I discuss this project, along with my [slides](https://docs.google.com/presentation/d/1ZI-L-aVYDdLWXpPOYjrs-DwDfPyZH8OSLtSQ9Szt1EA/edit?usp=sharing). 
 
 
-## Assumptions
-* The columns to be encrypted **must be strings.** If they are a float, integer, dictionary, or list, the program will automatically change it to a string.
-* If a value is empty, the program automatically fills that spot with "NULL." This is to avoid a bug in the built-in AES encryption service.
-* I am assuming that the user is storing their information in an Amazon S3 bucket. 
-* I am assuming that the information is relational and organized in a .csv type format, though the program does allow for flexibility as to what the delimiter is. 
-* The assumption is that the *master* EC2 node has sufficient space to hold the data. This can be modified by writing to a MySQL database first, though the time cost is signficantly larger. 
-
 ## Scalability
 
 
