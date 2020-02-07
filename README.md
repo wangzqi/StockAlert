@@ -3,7 +3,7 @@ Justin Wang's Insight-BOSTON-20A Data Engineering Project
 
 ## Table of Contents
 1. [Problem](README.md#problem)
-1. [Basic Strategy](README.md#basic-strategy)
+1. [Pipeline](README.md#basic-strategy)
 1. [Running Instructions](README.md#running-instructions)
 1. [Demo](README.md#demo)
 1. [Assumptions](README.md#assumptions)
@@ -20,7 +20,7 @@ A once-every-three-years study by the Federal Reserve Board found that in 2016, 
 *Solution:* The goal of this program is to process real-time stock transaction information and alert users when stocks in their watchlists have big fluctuations.
 
 
-## Basic Strategy
+## Pipeline
 
 ![Pipeline](docs/Pipeline.png)
 
