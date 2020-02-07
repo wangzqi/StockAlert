@@ -3,7 +3,7 @@ Justin Wang's Insight-BOSTON-20A Data Engineering Project
 
 ## Table of Contents
 1. [Problem](README.md#problem)
-1. [Pipeline](README.md#basic-strategy)
+1. [Pipeline](README.md#Pipeline)
 1. [Running Instructions](README.md#running-instructions)
 1. [Demo](README.md#demo)
 1. [Assumptions](README.md#assumptions)
@@ -24,7 +24,10 @@ A once-every-three-years study by the Federal Reserve Board found that in 2016, 
 
 ![Pipeline](docs/Pipeline.png)
 
-The strategy was to allow the user to input **beginning file location**, **write location**, **columns** to be encrypted (or decrypted), whether you want it **encrypted** or **decrypted**, and the **delimiter** separating data on a Flask front end. This is then fed into a Spark program which pulls the correct file, distributes it across multiple nodes, encrypts the information on each node, then returns it back to the main node. From here, the *newly encrypted* file is written back into the EC2 container and the key for the encryption is stored in my personal EC2 bucket. An illustration of my chosen pipeline can be shown above. 
+* The input data is stored on Amazon S3.
+* One Amazon EC2 instances is deployed to read and put records to Kinesis.
+* The records streamed through Kinesis and triggered Lambda to process 
+* The output are stored on Dynamodb. 
 
 For a majority of the testing of my code, I used [FEC Donation Data](https://www.fec.gov/data/browse-data/?tab=bulk-data) and [White Pages](http://www.odditysoftware.com/download_databases/29_white-pages-data_1.html). 
 
