@@ -15,5 +15,5 @@ This folder contains the code to generate the input and front end. Both of them 
 #### Front End
     $ chmod +x app.py
     $ python3 app.py
-  Go to the website that is specified. 
+Go to the website that is specified. 
 
