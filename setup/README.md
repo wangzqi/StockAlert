@@ -1,7 +1,3 @@
-## EC2 set up
-m4.large
-
-
 ## Tools set up
 For tools setting up, 
 * Clone this repo to the your local machine or EC2 node. 
