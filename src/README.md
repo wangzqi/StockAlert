@@ -8,11 +8,14 @@ This folder contains the code to generate the input and front end. Both of them 
 * Go to StockAlert/src/ in your terminal.
 
 #### Input
+Read the input and send to Kinesis Stream:
 
     $ chmod +x create-stream-input.py
     $ python3 create-stream-input.py
 
 #### Front End
+Run the front end
+
     $ chmod +x app.py
     $ python3 app.py
 Go to the website that is specified. 
