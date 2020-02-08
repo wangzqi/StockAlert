@@ -1,4 +1,4 @@
-## Tools set up
+## Running Instructions
 For tools setting up, 
 * Clone this repo to the your local machine or EC2 node. 
 * Go to StockAlert/setup/.
