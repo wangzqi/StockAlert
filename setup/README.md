@@ -14,9 +14,9 @@ Register it
 ### Kinesis
 * Clone this repo to the your local machine or EC2 node. 
 * Go to StockAlert/setup/.
-* Create Kinesis Stream
+* Create Kinesis Stream:
 
-    python3 create-stream.py
+        python3 create-stream.py
 
 
 ### Lambda
