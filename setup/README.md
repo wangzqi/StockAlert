@@ -2,14 +2,15 @@
 m4.large
 
 
-## Tools setting up
+## Tools set up
+For tools setting up, 
 * Clone this repo to the your local machine or EC2 node. 
-* Go to StockAlert.
+* Go to StockAlert/setup/.
 
 ### Kinesis set up
 * Create Kinesis Stream:
 
-        python3 setup/create-stream.py
+        python3 create-stream.py
 
 
 ### Lambda
