@@ -38,15 +38,10 @@ In the first part, you can see an example of data that is stored in an S3 Bucket
 
 [Here](https://youtu.be/rsZm3JbHMSM) you can watch a video of my presentation where I discuss this project, along with my [slides](https://docs.google.com/presentation/d/1ZI-L-aVYDdLWXpPOYjrs-DwDfPyZH8OSLtSQ9Szt1EA/edit?usp=sharing). 
 
+## Engineering Challenges
+Latency - Solution: Fan-out problem with creating multiple shards 
 
-## Scalability
-
-
-The red dots on the plot represents four nodes and the black dots represents one node. The red and black line are the so-called "line of best fit" for the red and black points, respectively. We notice the definite increase in speed as we increase nodes, which shows a distribution. 
-
-![Pipeline](docs/scalability.png)
-
-We also note that this is linear. We **emphasize** that this is not shocking. This does not show anything in particular except that things are working *as expected*. 
+Cost - Solution: Autoscaling split and merge shards as input requires
 
 ## Future Work
 While this program runs reasonably efficiently and distributes as expected, there are several improvements to be made. 
