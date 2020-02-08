@@ -9,11 +9,11 @@ This folder contains the code to generate the input and front end. Both of them 
 
 #### Input
 
-    chmod +x create-stream-input.py
-    python create-stream-input.py
+    $ chmod +x create-stream-input.py
+    $ python3 create-stream-input.py
 
 #### Front End
-* Type "chmod +x app.py".
-* Type "python app.py".
-* Go to the website that is specified. 
+    $ chmod +x app.py
+    $ python3 app.py
+  Go to the website that is specified. 
 
