@@ -14,7 +14,7 @@ Read the input and send to Kinesis Stream:
     $ python3 create-stream-input.py
 
 #### Front End
-Run the front end
+Run the front end server
 
     $ chmod +x app.py
     $ python3 app.py
