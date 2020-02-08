@@ -2,7 +2,7 @@
 m4.large
 
 
-Tools setting up
+## Tools setting up
 * Clone this repo to the your local machine or EC2 node. 
 * Go to StockAlert.
 
