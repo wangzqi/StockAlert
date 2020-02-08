@@ -7,7 +7,7 @@ Justin Wang's Insight-BOSTON-20A Data Engineering Project
 1. [Running Instructions](README.md#running-instructions)
 1. [Demo](README.md#demo)
 1. [Files in Repo](README.md#files-in-repo)
-1. [Future Work](README.md#Engineering-Challenges)
+1. [Engineering Challenges](README.md#Engineering-Challenges)
 1. [Contact Information](README.md#contact-information)
 
 ## Problem
