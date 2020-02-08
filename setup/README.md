@@ -18,7 +18,7 @@ For tools setting up,
 * Copy the content in lambda-function-kinesis-consume.py to the Lambda function code
 * Click "Add trigger" in the Designer portion and set up the Kinesis created above as the trigger: 
   
-  use Starting position=Latest
+  Use Latest for "Starting position"
 
 ### Dynamodb
 * Spin up an EC2 instance (or cluster). 
