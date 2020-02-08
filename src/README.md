@@ -18,5 +18,5 @@ Run the front end server
 
     $ chmod +x app.py
     $ python3 app.py
-Go to the website that is specified. 
+Go to the website that is specified in your browser. 
 
