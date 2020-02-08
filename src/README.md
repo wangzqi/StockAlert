@@ -1,5 +1,5 @@
 ## Running Instructions
-## EC2
+### EC2
 * Spin up an EC2 instance (m4.large is used here). 
 * Make sure that all the python and system requirements (in requirements.txt) are installed.
 * Clone this repo to the EC2 node. 
