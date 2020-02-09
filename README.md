@@ -38,7 +38,7 @@ A once-every-three-years study by the Federal Reserve Board found that in 2016, 
 *Description:* The folder setup contains the codes to set up AWS Kinesis, Lambda, Dynamodb, and the running instruction. 
 ### ./test
 *Description:* The folder test contains the codes for testing.
-### ./docs
+### ./assets
 *Description:* The folder docs contains some supplementary files.
 
 ## Engineering Challenges
