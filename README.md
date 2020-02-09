@@ -4,9 +4,8 @@ Justin Wang's Insight-BOSTON-20A Data Engineering Project
 ## Table of Contents
 1. [Problem](README.md#problem)
 1. [Pipeline](README.md#Pipeline)
-1. [Running Instructions](README.md#running-instructions)
 1. [Demo](README.md#demo)
-1. [Files in Repo](README.md#files-in-repo)
+1. [Files in Repo and Running Instruction](README.md#files-in-repo-and-running-instruction)
 1. [Engineering Challenges](README.md#Engineering-Challenges)
 1. [Contact Information](README.md#contact-information)
 
@@ -30,6 +29,14 @@ A once-every-three-years study by the Federal Reserve Board found that in 2016, 
 ## Demo
 
 [Here](https://docs.google.com/presentation/d/1Hfd_69M8oH_Z5qKHjjJgYDO-kT6uJuBI7YAezgpVQqw/edit) you can see a demo of my application in the works. 
+
+
+## Files in Repo and Running Instruction
+### Folder src
+
+### Folder setup
+### Folder setup
+### Folder setup
 
 ## Engineering Challenges
 Latency - Solution: Fan-out problem with creating multiple shards.
