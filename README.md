@@ -33,13 +33,13 @@ A once-every-three-years study by the Federal Reserve Board found that in 2016, 
 
 ## Files in Repo and Running Instruction
 ### Folder src
-*Description:* The folder src contains
+*Description:* The folder src contains the code to generate the input, front end, and the running instruction.
 ### Folder setup
-*Description:* The folder setup contains
+*Description:* The folder setup contains the codes to set up AWS Kinesis, Lambda, Dynamodb, and the running instruction. 
 ### Folder test
-*Description:* The folder test contains
+*Description:* The folder test contains the codes for testing.
 ### Folder docs
-*Description:* The folder docs contains
+*Description:* The folder docs contains some supplementary files.
 
 ## Engineering Challenges
 Latency - Solution: Fan-out problem with creating multiple shards.
