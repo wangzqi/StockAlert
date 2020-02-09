@@ -33,13 +33,13 @@ A once-every-three-years study by the Federal Reserve Board found that in 2016, 
 
 ## Files in Repo and Running Instruction
 ### Folder src
-The folder src contains
+*Solution:* The folder src contains
 ### Folder setup
-The folder setup contains
+*Solution:* The folder setup contains
 ### Folder test
-The folder test contains
+*Solution:* The folder test contains
 ### Folder docs
-The folder docs contains
+*Solution:* The folder docs contains
 
 ## Engineering Challenges
 Latency - Solution: Fan-out problem with creating multiple shards.
