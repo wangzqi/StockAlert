@@ -18,7 +18,7 @@ A once-every-three-years study by the Federal Reserve Board found that in 2016, 
 
 ## Pipeline
 
-![Pipeline](docs/Pipeline.png)
+![Pipeline](assets/Pipeline.png)
 
 * The input data is stored on Amazon S3.
 * One Amazon EC2 instance is deployed to read and put records to Kinesis.
