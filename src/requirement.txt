@@ -3,15 +3,3 @@ pandas=0.25.1
 python=3.7
 Anaconda=2019.10
 dash=1.8.0
-
-botocore==1.12.181 
-Crypto==1.4.1 
-base64==1.0.0 
-time==1.0.0
-pyspark==2.4.3 
-flask_wtf==0.14.2 
-wtforms==2.2.1
-flask==1.0.3 
-os==1.0.0
-sys==1.0.0
-random==1.0.1 
